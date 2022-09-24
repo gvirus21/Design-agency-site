@@ -9,6 +9,7 @@ export const ScrollContext = createContext<IScrollValue>({
 })
 
 const ScrollObserver: React.FC = ({children}) => {
+    
     const [scrollY, setScrollY] = useState(0)
 
     const handleScroll = useCallback(() => {
