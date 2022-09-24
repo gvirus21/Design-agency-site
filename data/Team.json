@@ -1,0 +1,38 @@
+[
+    {
+        "id": "marc",
+        "name": "Marc",
+        "socialId": "@mrousavy",
+        "link": "https://github.com/mrousavy"
+    },
+    {
+        "id": "szymon",
+        "name": "Szymon",
+        "socialId": "@szymon20000",
+        "link": "https://github.com/Szymon2000"
+    },
+    {
+        "id": "thomas",
+        "name": "Thomas",
+        "socialId": "@Thomas90",
+        "link": "https://github.com/mrousavy"
+    },
+    {
+        "id": "eric",
+        "name": "Eric",
+        "socialId": "@eric789",
+        "link": "https://github.com/mrousavy"
+    },
+    {
+        "id": "viktoria",
+        "name": "Victoria",
+        "socialId": "@mvictoria",
+        "link": "https://github.com/mrousavy"
+    },
+    {
+        "id": "christoph",
+        "name": "Christoph",
+        "socialId": "@christoph222",
+        "link": "https://github.com/mrousavy"
+    }
+]
