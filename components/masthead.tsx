@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ScrollContext } from "../utils/scroll-observer";
 
 const Masthead: FC = () => {
+    const [imageLoaded, setImageLoaded] = useState(false)
     const refContainer = useRef<HTMLDivElement>(null)
     const {scrollY} = useContext(ScrollContext)
 
@@ -13,12 +14,17 @@ const Masthead: FC = () => {
         progress = Math.min(1, scrollY / elContainer.clientHeight)
     }
 
+    const handleImageLoaded = useCallback(() => {
+      setImageLoaded(true)
+    }, [])
+
   return (
     <div 
         ref={refContainer}
         className="min-h-screen flex flex-col items-center justify-center sticky top-0 -z-10"
 
         style={{
+          // parallax handler
             transform: `translateY(-${progress * 20}vh)`
         }}
     >
@@ -32,12 +38,13 @@ const Masthead: FC = () => {
         <source src="/assets/bg-2.mp4" type="video/mp4" />
       </video>
 
-      <div className={`flex-grow-0 pt-10 transition-opacity duration-1000`}>
+      <div className={`flex-grow-0 pt-10 transition-opacity duration-1000 ${imageLoaded ? 'opacity-100' : 'opacity-0 -translate-y-10'}`}>
         <Image
           src="/assets/logo.svg"
           width={128 / 3}
           height={114 / 3}
           alt="logo"
+          onLoad={handleImageLoaded}
         />
       </div>
 
