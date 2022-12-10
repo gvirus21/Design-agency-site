@@ -3,7 +3,6 @@ import Image from "next/image";
 import { ScrollContext } from "../utils/scroll-observer";
 
 const Masthead: FC = () => {
-    const [imageLoaded, setImageLoaded] = useState(false)
     const refContainer = useRef<HTMLDivElement>(null)
     const {scrollY} = useContext(ScrollContext)
 
@@ -14,9 +13,7 @@ const Masthead: FC = () => {
         progress = Math.min(1, scrollY / elContainer.clientHeight)
     }
 
-    const handleImageLoaded = useCallback(() => {
-      setImageLoaded(true)
-    }, [])
+
 
   return (
     <div 
@@ -40,11 +37,11 @@ const Masthead: FC = () => {
 
       <div className={`flex-grow-0 pt-10 transition-opacity duration-1000`}>
         <Image
-          src="/assets/logo.svg"
-          width={128 / 3}
-          height={114 / 3}
+        className="object-contain"
+          src="/assets/logo.png"
+          width={128/2}
+          height={114/2}
           alt="logo"
-          // onLoad={handleImageLoaded}
         />
       </div>
 
