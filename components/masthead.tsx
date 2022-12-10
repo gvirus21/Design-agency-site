@@ -44,7 +44,7 @@ const Masthead: FC = () => {
           width={128 / 3}
           height={114 / 3}
           alt="logo"
-          onLoad={handleImageLoaded}
+          // onLoad={handleImageLoaded}
         />
       </div>
 
