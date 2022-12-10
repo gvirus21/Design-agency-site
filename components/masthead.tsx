@@ -38,7 +38,7 @@ const Masthead: FC = () => {
         <source src="/assets/bg-2.mp4" type="video/mp4" />
       </video>
 
-      <div className={`flex-grow-0 pt-10 transition-opacity duration-1000 ${imageLoaded ? 'opacity-100' : 'opacity-0 -translate-y-10'}`}>
+      <div className={`flex-grow-0 pt-10 transition-opacity duration-1000`}>
         <Image
           src="/assets/logo.svg"
           width={128 / 3}
