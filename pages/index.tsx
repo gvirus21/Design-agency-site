@@ -4,7 +4,7 @@ import Masthead from '../components/masthead'
 import Aboutus from '../components/aboutus'
 import Skills from '../components/skills'
 import Works from '../components/works'
-import LogoSlider from '../components/logoslider'
+import TrustedBy from '../components/trustedby'
 
 const Home: NextPage = () => {
   return (
@@ -19,7 +19,7 @@ const Home: NextPage = () => {
       <Aboutus />
       <Skills />
       <Works />
-      <LogoSlider />
+      <TrustedBy />
     </div>
   )
 }
