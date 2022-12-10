@@ -54,7 +54,7 @@ const Masthead: FC = () => {
       >
         <h1 className="mb-6 text-4xl xl:text-5xl">Likuid</h1>
         <h2 className="mb-2 text-2xl xl:text-3xl tracking-tight">
-          <span>Design </span>
+          <span>Development </span>
           <span>done right.</span>
         </h2>
       </div>
