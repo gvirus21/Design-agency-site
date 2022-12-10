@@ -1,5 +1,6 @@
 import React from "react";
 import { TileWrapper, TileBackground, TileContent, Tile } from "./tile";
+import Image from "next/image";
 import { WorkBackground, WorkContainer, WorkLeft, WorkRight } from "./Work";
 
 const Works = () => {
@@ -14,45 +15,58 @@ const Works = () => {
           renderContent={({ progress }) => (
             <WorkContainer>
               <WorkLeft progress={progress}>
-                <div>We built 0</div>
+                <div>We helped building</div>
                 <div className="text-4xl md:text-5xl font-semibold tracking-tight">
-                  Pink Panda&apos;s app
+                  Google&apos;s Maps app
                 </div>
               </WorkLeft>
               <WorkRight progress={progress}>
-                <div className="bg-pink-600 h-[30rem] w-[30rem]"></div>
+                <div className="h-[50rem] w-[30rem]">
+                  <img src="/assets/apps/maps.png" 
+                  className="object-contain" />
+                </div>
               </WorkRight>
             </WorkContainer>
           )}
         ></Tile>
+      </TileContent>
+      <TileContent>
         <Tile
           page={1}
           renderContent={({ progress }) => (
             <WorkContainer>
               <WorkLeft progress={progress}>
-                <div>We built 1</div>
+                <div>We helped building</div>
                 <div className="text-4xl md:text-5xl font-semibold tracking-tight">
-                  Pink Panda&apos;s app
+                  Apple&apos;s Music app
                 </div>
               </WorkLeft>
               <WorkRight progress={progress}>
-                <div className="bg-pink-600 h-[30rem] w-[30rem]"></div>
+              <div className="h-[50rem] w-[30rem]">
+                  <img src="/assets/apps/apple-music.png" 
+                  className="object-contain" />
+                </div>
               </WorkRight>
             </WorkContainer>
           )}
         ></Tile>
+      </TileContent>
+      <TileContent>
         <Tile
           page={2}
           renderContent={({ progress }) => (
             <WorkContainer>
               <WorkLeft progress={progress}>
-                <div>We built 3</div>
+                <div>We helped building</div>
                 <div className="text-4xl md:text-5xl font-semibold tracking-tight">
-                  Pink Panda&apos;s app
+                  Netfllix&apos;s Player
                 </div>
               </WorkLeft>
               <WorkRight progress={progress}>
-                <div className="bg-pink-600 h-[30rem] w-[30rem]"></div>
+              <div className="h-[50rem] w-[30rem]">
+                  <img src="/assets/apps/netflix-app.png" 
+                  className="object-contain" />
+                </div>
               </WorkRight>
             </WorkContainer>
           )}

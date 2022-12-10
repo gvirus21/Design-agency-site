@@ -56,7 +56,7 @@ export const TileWrapper: React.FC<WrapperProps> = ({
     >
       <div
         ref={refContainer}
-        className="realtive bg-black text-white"
+        className="realtive bg-white text-black"
         style={{ height: numOfPages * 100 + "vh" }}
       >
         {children}
