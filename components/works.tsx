@@ -21,7 +21,7 @@ const Works = () => {
                 </div>
               </WorkLeft>
               <WorkRight progress={progress}>
-                <div className="h-[50rem] w-[30rem]">
+                <div className="md:h-[30rem] md:w-[30rem] lg:h-[50rem] lg:w-[30rem]">
                   <img src="/assets/apps/maps.png" 
                   className="object-contain" />
                 </div>
@@ -42,7 +42,7 @@ const Works = () => {
                 </div>
               </WorkLeft>
               <WorkRight progress={progress}>
-              <div className="h-[50rem] w-[30rem]">
+              <div className="md:h-[30rem] md:w-[30rem] lg:h-[50rem] lg:w-[30rem]">
                   <img src="/assets/apps/apple-music.png" 
                   className="object-contain" />
                 </div>
@@ -63,7 +63,7 @@ const Works = () => {
                 </div>
               </WorkLeft>
               <WorkRight progress={progress}>
-              <div className="h-[50rem] w-[30rem]">
+              <div className="md:h-[30rem] md:w-[30rem] lg:h-[50rem] lg:w-[30rem]">
                   <img src="/assets/apps/netflix-app.png" 
                   className="object-contain" />
                 </div>
